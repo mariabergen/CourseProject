@@ -85,7 +85,7 @@ fBodyBodyGyroJerkMag-mean()
 
 fBodyBodyGyroJerkMag-std()
 
-The measurements are normalized in a [-1,1] range
+The measurements (called features in the files) are normalized in a [-1,1] range.
 
 The features.txt indicates the names of the variables in both the X_test.txt and X_train.txt files. y_test.txt and y_train.txt provide the activities performed by the subjects (numerical) and subject_text.txt and subject_train.txt provide the subjects identifiers (numerical, as they are all anonymous)
 
