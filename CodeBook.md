@@ -102,7 +102,7 @@ A more detailed description of the process is provided in https://github.com/mar
 3. Rename the variables in the activities column to be more descriptive. The activity_labels.txt file indicates the equivalence between the numbers that appear in both the y_test.txt and the y_train.txt files and the precise activity undertaken by the subjects. The variable is renamed using replace.
 
 4. Appropriately label the data set with descriptive variable names.
-The names provided by the original data files in features.txt are used in this case, as they seem clearly descriptive. The feature.txt file is read and the data frame is transposed to convert the column with the features names into a row to be added to the short_table using names(short_table).
+The names provided by the original data files in features.txt are used in this case, as they are sufficiently descriptive. The feature.txt file is read and the data frame is transposed to convert the column with the features names into a row to be added to the short_table using names(short_table).
 
 5. From the data set in step 4, create a second, independent tidy data set with the average of each variable for each activity and each subject. The last step is done by grouping by "Subject" and "Activity", using group_by and calculating the mean using summarize_each. The resulting table, tidy_table is composed by the 30 volunteers and each of the 6 activities they performed, and the mean for each of the 66 initial measurements ending in either -mean()* or -std()*.
 
