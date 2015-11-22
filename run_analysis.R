@@ -43,7 +43,7 @@ neededFeatures <- c(1:8, 43:48, 83:88, 123:128, 163:168, 203:204,
                     347:352, 426:431, 505:506, 518:519, 531:532,
                     544:545)
 ## neededFeatures represent the columns to keep, the subject, activity and all
-## of the features ending in either _mean or _std.
+## of the features ending in either -mean* or -std*.
 
 short_table <- single_table[, neededFeatures]
 
@@ -65,7 +65,7 @@ short_table$V1.1 <- replace(short_table$V1.1, short_table$V1.1 == 6, "Laying")
 ## 4.- Appropriately label the data set with descriptive variable names. 
 
 features <- read.table("./features.txt", sep="")
-## Get only the features that pertain to _mean and _std
+## Get only the features that pertain to -mean* and -std*
 neededFeatures_bis <- c(1:6, 41:46, 81:86, 121:126, 161:166, 201:202, 
                         214:215, 227:228, 240:241, 253:254, 266:271,
                         345:350, 424:429, 503:504, 516:517, 529:530,
@@ -76,17 +76,15 @@ short_features <- features[neededFeatures_bis,]
 features_labels <- t(as.matrix(short_features))
 ## We are only interested in the second row, the one with the variable names
 features_names <- features_labels[2,]
-## Add the Subject and Activity to the beginning of the character, so that
+## Add the Subject and Activity to the beginning of features_names, so that
 ## it can be used to add it to the short_table already created
 add_activity <- append("Activity", features_names)
 add_subject <- append("Subject", add_activity)
 ## Add the names to the short table
 names(short_table) <-add_subject
 
-
 ## 5.- From the data set in step 4, create a second, independent tidy data set 
 ## with the average of each variable for each activity and each subject. 
-
 
 tidy_table <- short_table %>% group_by(Subject, Activity) %>% summarize_each(funs(mean),contains("mean()"), contains("std()"))
 
