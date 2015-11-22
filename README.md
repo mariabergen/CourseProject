@@ -18,7 +18,7 @@ The script run_analysis.R is done in steps following the directions from the pro
 
 3. - Rename the variables in the activities column to be more descriptive. The activity_labels.txt file indicates the equivalence between the numbers that appear in both the y_test.txt and the y_train.txt files and the precise activity undertaken by the subjects. The variable is renamed using replace.
 
- 4.- Appropriately label the data set with descriptive variable names.
+4.- Appropriately label the data set with descriptive variable names.
 The names provided by the original data files in features.txt are used in this case, as they seem descriptive enough. The feautre.txt file is read and the data frame is transposed to convert the column with the features names into a row to be added to the short_table using names(short_table).
 
 5 .-
