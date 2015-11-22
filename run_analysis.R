@@ -65,7 +65,7 @@ short_table$V1.1 <- replace(short_table$V1.1, short_table$V1.1 == 6, "Laying")
 ## 4.- Appropriately label the data set with descriptive variable names. 
 
 features <- read.table("./features.txt", sep="")
-## Get only the features that pertain to -mean* and -std*
+## Get only the features that relate to -mean* and -std*
 neededFeatures_bis <- c(1:6, 41:46, 81:86, 121:126, 161:166, 201:202, 
                         214:215, 227:228, 240:241, 253:254, 266:271,
                         345:350, 424:429, 503:504, 516:517, 529:530,
