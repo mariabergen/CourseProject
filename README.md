@@ -2,17 +2,13 @@
 
 README file for the Getting and Cleaning Data course project
 
-Course project using data collected by: Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. A Public Domain Dataset for Human Activity Recognition Using Smartphones. 21th European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning, ESANN 2013. Bruges, Belgium 24-26 April 2013. All the information regarding the experiment conducted is available at: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+Course project using data collected by: Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. A Public Domain Dataset for Human Activity Recognition Using Smartphones. 21th European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning, ESANN 2013. Bruges, Belgium 24-26 April 2013. All the information regarding the conducted experiment is available at: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
-Briefly, the experiment consist on collecting data from Samsung smartphones accelerometers. Thirty volunteers wore the smartphones around their waist while doing a series of activities: walking, climbing and descending stairs, sitting, standing and laying. 
+Briefly, the experiment consist on collecting data from Samsung smartphones accelerometers. Thirty volunteers wore the smartphones around their waists while performing a series of activities: walking, climbing and descending stairs, sitting, standing and laying. 
 
 The raw data was obtained from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
-The original data come from:
-Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. A Public Domain Dataset for Human Activity Recognition Using Smartphones. 21th European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning, ESANN 2013. Bruges, Belgium 24-26 April 2013. All the information regarding the experiment conducted is 
 
 For the current project the following files are needed: X_test.txt, X_train.txt, subject_test.txt, subject_train.txt, y_test.txt, y_train.txt, features_info.txt, features.txt, activity_labels.txt, and Readme.txt.
-
-When reading the data into R, make sure that for the X_test.txt and X_train.txt we use dec=".".
 
 The script run_analysis.R is done in steps following the directions from the project. The first step, prior to any data wrangling is to read the data into R. This is done using read.table for the files X_test.txt, subject_test.txt, y_test.txt, X_train.txt, subject_train.txt, y_train.txt, and features.txt.
 
