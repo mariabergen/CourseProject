@@ -1,5 +1,9 @@
 # README file for the Getting and Cleaning Data course project
 
+The raw data was obtained from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip. When unzipping the data, a main directory named "UCI HAR Dataset" is composed by two subdirectories: "test" and "train", plus four text files with common information for both the test and train data: README.txt, features_info.txt, features.txt, and activity_labels.txt. Inside the subdirectories three extra text files plus an additional subdirectory appear.
+
+For the current project the following files are needed: X_test.txt, X_train.txt, subject_test.txt, subject_train.txt, y_test.txt, y_train.txt, features_info.txt, features.txt, activity_labels.txt, and README.txt.
+
 The script run_analysis.R is done in steps following the directions from the project. 
 
 1. Read the data into R. This is done using read.table() for the files X_test.txt, subject_test.txt, y_test.txt, X_train.txt, subject_train.txt, y_train.txt, and features.txt.
